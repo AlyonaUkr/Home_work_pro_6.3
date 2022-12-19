@@ -4,7 +4,7 @@ switch (numOrStr) {
     case null:
         console.log('You canceled');
         break
-    case '':
+    case !numOrStr.trim() === ''|| numOrStr:
         console.log('Empty String');
         break
     case !isNaN(numOrStr) || numOrStr:
@@ -13,3 +13,4 @@ switch (numOrStr) {
     default:
         console.log('Ok');
 }
+
